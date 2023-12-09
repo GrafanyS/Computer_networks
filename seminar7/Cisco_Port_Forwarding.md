@@ -22,6 +22,13 @@ Router> enable
 Router# configure terminal
 ```
 
+Статический проброс портов
+
+```bash
+Router(config)#ip nat inside source static tcp 10.0.0.2 80 11.22.34.2 80
+Router(config)#ip nat inside source static tcp 10.0.0.3 443 11.22.34.2 443
+```
+
 Прописываем проброс порта на `Cisco`:
 
 ```bash
